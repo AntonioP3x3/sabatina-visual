@@ -1,0 +1,6 @@
+interface:
+  display_name: "Sabatina visual"
+  short_description: "Referências reais e decisões antes de criar"
+  default_prompt: "Use $sabatina-visual para pesquisar referências reais e definir comigo a direção visual antes de implementar."
+policy:
+  allow_implicit_invocation: true

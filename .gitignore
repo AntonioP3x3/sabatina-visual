@@ -1,0 +1,10 @@
+.DS_Store
+Thumbs.db
+Desktop.ini
+node_modules/
+.env
+.env.*
+!.env.example
+# Artefatos de sessões de uso pertencem aos projetos de quem usa a skill.
+/sabatina/
+*.log
