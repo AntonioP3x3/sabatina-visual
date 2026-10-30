@@ -1,0 +1,7 @@
+{
+  "name": "sabatina-visual",
+  "version": "1.1.0",
+  "description": "Descoberta visual com memória pessoal fora da instalação.",
+  "author": { "name": "Antonio Castro" },
+  "skills": "./skills/"
+}

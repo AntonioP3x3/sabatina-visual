@@ -8,3 +8,8 @@ node_modules/
 # Artefatos de sessões de uso pertencem aos projetos de quem usa a skill.
 /sabatina/
 *.log
+# Memórias são externas; estas regras também evitam inclusão acidental na raiz.
+/.sabatina-visual/
+/memoria/
+/memory/
+/backups/

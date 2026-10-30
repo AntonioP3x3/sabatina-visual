@@ -2,6 +2,8 @@
 
 Escolha o que combina com o seu ambiente. A instalação não começa uma sabatina nem autoriza conectar serviços pagos.
 
+Se já houver uma versão antiga, acrescente: “antes de substituir, use a ferramenta de memória da versão nova para migrar a instalação antiga; verifique a cópia e preserve meus ajustes”. Veja [o procedimento completo](MEMORIA.md).
+
 ## Instalar no Codex
 
 ```text
@@ -80,6 +82,42 @@ continuar sem ter acesso a esta conversa.
 
 ```text
 Registra o que aprendemos nesta sessão. Proponha até três lições de método
-que sirvam para outros projetos e espere minha aprovação antes de gravar.
-Não inclua nomes, arquivos nem informações do cliente na skill.
+ou preferências pessoais e espere minha aprovação antes de gravar.
+Salve as aprovadas na memória pessoal externa da sabatina, nunca na pasta
+instalada. Não inclua nomes, arquivos nem informações do cliente.
+```
+
+## Atualizar preservando minha memória
+
+```text
+Atualize minha sabatina-visual usando o repositório
+https://github.com/AntonioP3x3/sabatina-visual.
+
+Antes de substituir qualquer arquivo, identifique a instalação ativa e o
+endereço da minha memória pessoal. Se ainda uso o modelo antigo, obtenha
+a versão nova em uma pasta separada e use scripts/memoria.mjs migrate
+com --source apontando para a instalação antiga. Confira a cópia antes
+de atualizar. Preserve também ajustes pessoais promovidos ao método
+para comparação. Faça backup da memória externa. Atualize somente o
+pacote, mantendo o mesmo endereço de memória, e confirme que as lições
+e preferências anteriores continuam acessíveis. Não publique meu histórico.
+```
+
+## Conferir o que a skill lembra
+
+```text
+Confira a memória persistente da sabatina-visual. Informe o endereço
+resolvido, as lições e preferências ativas e eventuais conflitos com o
+pedido atual. Não confunda exemplos de formato com memórias reais.
+Confira também as lições antigas listadas no índice de migração,
+deduplicando as origens. Se não houver memória, diga isso sem inventar.
+```
+
+## Fazer backup ou mudar de computador
+
+```text
+Faça um backup da minha memória pessoal da sabatina-visual, incluindo
+lições, preferências, histórico e origens legadas. Preserve a memória
+atual. Mostre o caminho do backup e explique qual pasta preciso levar
+para outro computador. Não envie nem sincronize esses dados sem eu pedir.
 ```

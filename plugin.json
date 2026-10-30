@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "sabatina-visual",
+  "version": "1.1.0",
+  "description": "Descoberta visual em português com referências, decisões guiadas e memória pessoal que sobrevive às atualizações.",
+  "author": { "name": "Antonio Castro", "url": "https://github.com/AntonioP3x3" },
+  "repository": "https://github.com/AntonioP3x3/sabatina-visual",
+  "license": "MIT"
+}

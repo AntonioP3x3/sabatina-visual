@@ -29,7 +29,7 @@ Toda imagem, estudo ou prévia que o usuário deve ver antes de escolher vem com
 
 ## 1. Conectores, identidade e tarefa
 
-**Lições.** Leia as [lições aprovadas](aprendizados/licoes.md) e aplique as ativas junto destas regras.
+**Memória, em toda sessão.** Siga [memória persistente](references/memoria-persistente.md): leia as [lições compartilhadas](aprendizados/licoes.md), as lições e preferências pessoais na pasta externa resolvida e as lições legadas indexadas. Retome também `sabatina/decisoes.md` do projeto, quando existir. A pasta instalada da skill/plugin contém o método e não recebe memórias pessoais. Uma atualização não pode zerar, substituir ou publicar a memória externa. Se ela estiver inacessível, declare o limite; não diga que lembrou ou gravou sem verificar.
 
 **Conectores, na primeira mensagem.** Antes de qualquer decisão, teste cada ferramenta com uma chamada barata e só de leitura: navegador com captura gravada em arquivo, renderização de HTML, geração de imagem e os conectores de 21st.dev (uma busca simples), Landingfolio e OpenDesign Cloud. A existência de um conector não comprova busca em catálogo; ferramenta que gasta créditos só é testada com autorização. Mostre o resultado numa lista curta — ✅ funcionando, ⚠️ conectado mas o teste falhou, ❌ ausente — e, se algo faltar, diga em palavras simples o que isso tira da sabatina. Faça então uma pergunta: **configurar agora** (leia [configurar conectores](references/configurar-conectores.md)) ou **seguir sem eles nesta sessão**, com navegador, pesquisa web e imagens próprias. A falta de um conector nunca trava a sabatina.
 
@@ -102,8 +102,8 @@ Na execução, aplique o [acabamento técnico](references/acabamento-tecnico.md)
 
 **Pronto quando:** o brief é autocontido e a entrega solicitada está validada no nível realmente executado.
 
-Ao encerrar, diga em uma linha que o usuário pode pedir “registra o que aprendemos” para a skill guardar lições desta sessão.
+Ao encerrar, diga em uma linha que o usuário pode pedir “registra o que aprendemos” para guardar lições e preferências na memória pessoal, preservada entre atualizações.
 
 ## Aprender com a sessão
 
-Quando o usuário pedir para registrar o que a sessão ensinou, em qualquer momento ou agente, siga [aprender com a sessão](references/aprender.md): garimpe correções e atritos, filtre o que é genérico, proponha de uma a três lições e grave só as aprovadas, com remendo pontual. Fatos do caso ficam no projeto; a skill guarda só o método.
+Quando o usuário pedir para registrar o que a sessão ensinou, em qualquer momento ou agente, siga [aprender com a sessão](references/aprender.md): garimpe correções e atritos, separe lições de método de preferências pessoais, proponha de uma a três memórias e grave só as aprovadas, fora da instalação. Fatos do caso ficam no projeto. Melhorias públicas do método só entram no pacote com autorização específica para compartilhar; uma memória privada não vira regra pública automaticamente.

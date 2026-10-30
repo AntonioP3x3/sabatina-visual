@@ -9,7 +9,7 @@ generated: { by: agent/claude-opus, at: 2026-10-24 }
 
 # Lições da sabatina-visual
 
-Aplique as lições ativas como parte das regras. Uma lição aprovada que refina uma regra da skill vale sobre ela. Lição com “revisar em” vencido é conferida antes de aplicar. Para acrescentar, confirmar, promover ou retirar lições, siga [aprender com a sessão](../references/aprender.md).
+Este arquivo contém somente lições compartilhadas, revisadas pelo mantenedor e distribuídas com a skill. Ele não recebe memórias de quem instalou. As lições e preferências pessoais ficam na pasta externa definida em [memória persistente](../references/memoria-persistente.md); são lidas junto desta base em toda sessão. Para registrar experiência pessoal, siga [aprender com a sessão](../references/aprender.md).
 
 Formato de cada lição:
 

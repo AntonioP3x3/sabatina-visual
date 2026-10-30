@@ -16,6 +16,8 @@ npx skills@latest add AntonioP3x3/sabatina-visual --skill sabatina-visual
 
 Escolha seu agente no instalador. Precisa de [Node.js](https://nodejs.org/) 22.20 ou superior e Git. O comando usa o instalador aberto [skills](https://github.com/vercel-labs/skills), também adotado pelos repositórios de referência.
 
+**Já usa uma versão antiga?** Antes de substituir a instalação, [migre as memórias antigas](docs/MEMORIA.md#se-você-já-usava-a-versão-antiga). Na versão 1.1, elas passam a ficar fora da pasta instalada.
+
 Para instalar diretamente no agente que você usa:
 
 ```sh
@@ -31,6 +33,17 @@ npx skills@latest add AntonioP3x3/sabatina-visual --skill sabatina-visual -a cur
 
 A instalação vale para o projeto atual. Acrescente `-g` para usar em vários projetos. [Outras formas de instalar e resolver problemas →](docs/INSTALACAO.md)
 
+## Plugin para Codex
+
+O repositório também inclui o pacote de plugin e o catálogo para instalação pelo GitHub:
+
+```sh
+codex plugin marketplace add AntonioP3x3/sabatina-visual
+codex plugin add sabatina-visual@antonio-castro
+```
+
+Use o plugin **ou** a instalação direta da skill no mesmo agente para evitar duplicatas. Ambos leem a mesma memória pessoal. O pacote é distribuído por este repositório; não significa publicação no diretório universal de plugins. [Instalação e atualização do plugin →](docs/INSTALACAO.md#plugin-no-codex)
+
 ## Prefere pedir ao agente? Cole isto
 
 ```text
@@ -42,7 +55,9 @@ npx skills@latest add AntonioP3x3/sabatina-visual --skill sabatina-visual
 
 Instale apenas para o agente que estou usando, no projeto atual. Se precisar
 escolher o agente e não conseguir identificá-lo, pergunte. Preserve qualquer
-instalação existente com alterações locais. A instalação precisa incluir a
+instalação existente com alterações locais: antes de substituir a versão
+antiga, migre aprendizados e preserve ajustes com o auxiliar novo de memória.
+A instalação precisa incluir a
 pasta inteira skills/sabatina-visual, com references, aprendizados e agents.
 Ao terminar, confirme onde instalou e como começo a usar. Se faltar acesso
 ao terminal ou à internet, explique a limitação sem afirmar que instalou.
@@ -82,11 +97,23 @@ Para a experiência visual completa, seu agente precisa conseguir pesquisar, mos
 
 Os comandos de instalação atendem agentes com suporte a skills e arquivos locais. Eles não instalam automaticamente a skill em um chat comum do ChatGPT ou Claude.
 
-## Personalize e compartilhe
+## Aprenda sem perder a memória nas atualizações
 
-Você pode adaptar a sua cópia. Para guardar uma melhoria de método descoberta durante o uso, peça **“registra o que aprendemos”**: o agente propõe as lições e só grava as aprovadas. Informações de clientes e do projeto ficam fora da skill.
+Peça **“registra o que aprendemos”**. O agente propõe lições e preferências, e grava somente as aprovadas. Elas ficam em uma pasta pessoal externa:
 
-Antes de atualizar, guarde suas adaptações e lições locais. [Como contribuir →](CONTRIBUTING.md)
+```text
+~/.sabatina-visual/memoria/
+```
+
+No Windows, `~` é sua pasta de usuário. O endereço independe do agente, do projeto e da versão da skill/plugin. A cada sessão, a skill consulta essa memória junto das regras distribuídas. Atualizar a instalação não substitui esses arquivos.
+
+- **A skill recebe melhorias de método** pelo repositório/plugin.
+- **Cada pessoa mantém suas próprias lições e preferências**, privadas e fora do pacote.
+- **As decisões do cliente e do trabalho ficam no projeto**, em `sabatina/`.
+
+As memórias dos seus amigos não são enviadas a você, e suas preferências não são publicadas para eles. Compartilhar uma melhoria é uma ação separada. A memória é local: trocar de computador exige levar a pasta; superfícies sem arquivos persistentes precisam exportar/importar o histórico.
+
+[Migração, backup e exemplos →](docs/MEMORIA.md) · [Prompts de memória e atualização →](docs/PROMPTS.md) · [Como contribuir →](CONTRIBUTING.md)
 
 ## Referências e créditos
 

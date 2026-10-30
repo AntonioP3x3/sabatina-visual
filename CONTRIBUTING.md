@@ -13,3 +13,7 @@ npx skills@latest add . --list
 ```
 
 Confira também se todos os arquivos referenciados estão presentes. Se mudar o comportamento, experimente um pedido real em uma pasta de teste e relate o que verificou. Sugestões de lições seguem o processo de `references/aprender.md`; uma proposta ainda não é uma lição aprovada.
+
+Ao alterar persistência, rode `node --test tests/memoria.test.mjs` com Node.js 22+ e confira a preservação de lições existentes, migração idempotente e troca de versão/plugin. Os testes criam pastas temporárias próprias. O auxiliar de memória usa apenas APIs de Node.js 18+.
+
+Nunca inclua sua pasta pessoal de memória no PR ou em um ZIP de distribuição. Uma lição privada precisa de autorização para compartilhar e de uma versão genérica revisada antes de entrar no método público. Mudanças futuras no formato de memória precisam de migração com backup e preservação de campos desconhecidos, não de reinicialização vazia.

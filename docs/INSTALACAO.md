@@ -26,6 +26,17 @@ Copie um dos [prompts prontos](PROMPTS.md). O agente precisa ter acesso a termin
 
 No Codex, o prompt específico usa o instalador nativo quando disponível. O instalador `npx skills` é a alternativa comum para vários agentes.
 
+## Plugin no Codex
+
+O pacote inclui `plugin.json`, compatibilidade em `.codex-plugin/plugin.json` e catálogo em `.agents/plugins/marketplace.json`. Para instalar pelo repositório:
+
+```sh
+codex plugin marketplace add AntonioP3x3/sabatina-visual
+codex plugin add sabatina-visual@antonio-castro
+```
+
+Abra uma nova sessão e confirme que a skill do plugin foi carregada. Não mantenha a instalação direta e o plugin ativos simultaneamente no mesmo agente. As duas formas usam o mesmo endereço de memória pessoal; não precisam transferir dados entre caches de instalação. A configuração é local e não publica o plugin no diretório universal.
+
 ## Sem Node.js: instalação manual
 
 Baixe o ZIP em **Code → Download ZIP** no [repositório](https://github.com/AntonioP3x3/sabatina-visual), ou clone:
@@ -52,6 +63,7 @@ A pasta instalada deve conter:
 sabatina-visual/
 ├── SKILL.md
 ├── agents/openai.yaml
+├── scripts/memoria.mjs
 ├── aprendizados/
 │   ├── licoes.md
 │   └── registro.md
@@ -62,6 +74,7 @@ sabatina-visual/
     ├── configurar-conectores.md
     ├── estilos-e-controles.md
     ├── fontes-e-proveniencia.md
+    ├── memoria-persistente.md
     └── qualidade-visual.md
 ```
 
@@ -78,14 +91,27 @@ Depois use [um dos pedidos de exemplo](PROMPTS.md). A primeira conversa deve ver
 
 ## Atualização
 
-Se instalou pelo `skills`, confira e atualize a skill:
+**Vindo da versão antiga:** faça primeiro a [migração da memória](MEMORIA.md#se-você-já-usava-a-versão-antiga), antes de executar qualquer comando que substitua a instalação. Isso também preserva ajustes incorporados ao método antigo para comparação.
+
+**A partir da versão 1.1:** as memórias pessoais já ficam fora da instalação. Atualize o método mantendo o mesmo endereço externo. Não apague a pasta de memória quando reinstalar ou remover o plugin.
+
+Se instalou pelo `skills`:
 
 ```sh
 npx skills@latest check
 npx skills@latest update sabatina-visual
 ```
 
-Guarde antes suas alterações e os arquivos de `aprendizados/`; uma atualização pode substituí-los. Se instalou manualmente, baixe a versão nova e compare as pastas antes de substituir arquivos. Não mantenha duas instalações da mesma skill no mesmo agente.
+Se usa o plugin do Codex, atualize o catálogo e a instalação:
+
+```sh
+codex plugin marketplace upgrade antonio-castro
+codex plugin add sabatina-visual@antonio-castro
+```
+
+Confira a versão instalada e abra uma nova sessão; reinicie o aplicativo se a atualização não aparecer. Se instalou manualmente, baixe a versão nova e substitua somente o pacote, preservando a pasta externa. Edições próprias em arquivos do método ainda precisam de comparação; prefira guardar personalizações na memória externa.
+
+Antes de qualquer atualização, você pode pedir: “faça um backup da minha memória da sabatina e atualize o método preservando esse endereço”. [Procedimento e limitações →](MEMORIA.md)
 
 ## Problemas comuns
 
@@ -96,3 +122,5 @@ Guarde antes suas alterações e os arquivos de `aprendizados/`; uma atualizaç�
 - **O comando não encontra o repositório:** confira acesso à internet e a URL. O repositório é público; baixar não exige convite.
 
 Referências: [instalador e opções](https://github.com/vercel-labs/skills/blob/main/docs/commands.md), [agentes e diretórios](https://github.com/vercel-labs/skills/blob/main/docs/agents.md).
+
+Plugins: [formato, catálogo e comandos oficiais do Codex](https://developers.openai.com/plugins/build/plugins).
